@@ -62,9 +62,15 @@ table {
         overflow-y: auto;
         float: left;
         height: 470px;
+        border-bottom: 1px solid #e0e0e0;
         tr {
             display: table;
             width: 100%;
+            &:last-child {
+                td {
+                    border-bottom: 0;
+                }
+            }
         }
         td {
             border-top: none;
