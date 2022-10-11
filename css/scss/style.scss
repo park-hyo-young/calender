@@ -49,7 +49,6 @@ table {
                 color: #ff9393;
             }
             &:nth-child(7) {
-                width: 135px;
                 color: #5c4aff;
             }
         }
@@ -61,9 +60,11 @@ tbody {
     width: 100%;
     height: 470px;
     border-bottom: 1px solid #e0e0e0;
+    scrollbar-color: #b4acff #dbd7ff;
+    scrollbar-width: thin;
     tr {
         display: table;
-        width: 100%;
+        height: 120px;
         &:last-child {
             td {
                 border-bottom: 0;
@@ -84,12 +85,10 @@ tbody {
         }
     }
     td {
-        height: 120px;
         padding: 10px;
         border-top: 0;
         text-align: left;
         &:nth-child(7) {
-            border-right: 0;
             span {
                 color: #5c4aff;
             }
@@ -132,7 +131,7 @@ span {
         color: #fff;
         background-color: #15b1b1;
     }
-    &.outmonth {
+    &.another_month {
         width: 100%;
         text-align: left;
         opacity: .5;
@@ -151,7 +150,7 @@ span {
         > p {
             color: #fff;
             padding: 0 5px;
-            &.type_01 {
+            &.color_01 {
                 position: relative;
                 padding: 0 0 0 20px;
                 color: #666;
@@ -167,15 +166,15 @@ span {
                     background: linear-gradient(#c8ff00, #ffffff);
                 }
             }
-            &.type_02 {
+            &.color_02 {
                 background: linear-gradient(90deg, #ffa600, #ffdfa4);
                 box-shadow: 0 5px 8px rgba($color: #ffa600, $alpha: .3);
             }
-            &.type_03 {
+            &.color_03 {
                 background: linear-gradient(90deg, #0051ff, #a9c4ff);
                 box-shadow: 0 5px 8px rgba($color: #0051ff, $alpha: .3);
             }
-            &.type_04 {
+            &.color_04 {
                 background: linear-gradient(90deg, #5900ff, #d376ff);
                 box-shadow: 0 5px 8px rgba($color: #5900ff, $alpha: .3);
             }
@@ -256,6 +255,8 @@ span {
             border: 1px solid #e0e0e0;
             font-size: 12px;
             resize: none;
+            scrollbar-color: #b6b6b6 #f1f1f1;
+            scrollbar-width: thin;
             &::placeholder {
                 color: #999;
             }
