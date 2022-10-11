@@ -56,7 +56,6 @@ table {
     }
     tbody {
         overflow-y: auto;
-        overflow-x: visible;
         float: left;
         height: 470px;
         border-bottom: 1px solid #e0e0e0;
@@ -70,6 +69,7 @@ table {
             }
         }
         td {
+            overflow-x: visible;
             height: 120px;
             padding: 10px;
             border-top: 0;
@@ -128,6 +128,7 @@ span {
         position: absolute;
         height: 30px;
         left: -6px;
+        // left: 6px;
         padding: 0 5px;
         border-radius: 6px;
         font-size: 13px;
