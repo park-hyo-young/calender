@@ -11,7 +11,7 @@
     height: 100vh;
     background: linear-gradient(45deg, #ffe2e2, #dbd7ff);
 }
-.inner {
+.calender_area {
     width: 1000px;
     height: 700px;
     padding: 25px 42px;
@@ -19,32 +19,30 @@
     border-radius: 15px;
     text-align: center;
 }
-
 .title {
-    padding-bottom: 38px;
     color: #666;
     font-size: 20px;
     text-align: left;
 }
 .month {
     font-size: 18px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 table {
     width: 100%;
-    background-color: #fff;
     caption {
         display: none;
     }
     th, td {
-        border: 1px solid #e0e0e0;
         width: 130px;
+        border: 1px solid #e0e0e0;
+        background-color: #fff;
     }
     thead {
         display: table;
         th {
             height: 40px;
-            padding: 12px 0 0;
+            padding: 11px 0;
             &:nth-child(1) {
                 color: #ff9393;
             }
@@ -56,7 +54,7 @@ table {
 }
 tbody {
     display: block;
-    overflow: auto;
+    overflow-y: auto;
     width: 100%;
     height: 470px;
     border-bottom: 1px solid #e0e0e0;
@@ -75,7 +73,7 @@ tbody {
                 display: none;
                 top: -201px;
                 &::after {
-                    top: 194px;
+                    top: 193px;
                     left: 20px;
                     border: 1px solid #e0e0e0;
                     border-top: 0;
@@ -88,6 +86,25 @@ tbody {
         padding: 10px;
         border-top: 0;
         text-align: left;
+        span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            color: #666;
+            line-height: 25px;
+            text-align: center;
+            &.today {
+                position: relative;
+                border-radius: 50%;
+                color: #fff;
+                background-color: #15b1b1;
+            }
+        }
+        &:nth-child(1) {
+            span {
+                color: #ff9393;
+            }
+        }
         &:nth-child(7) {
             span {
                 color: #5c4aff;
@@ -97,11 +114,6 @@ tbody {
                 &::after {
                     left: 165px;
                 }
-            }
-        }
-        &:nth-child(1) {
-            span {
-                color: #ff9393;
             }
         }
     }
@@ -117,20 +129,6 @@ tbody {
 }
 .holiday {
     color: #ff9393;
-}
-span {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    color: #666;
-    line-height: 25px;
-    text-align: center;
-    &.today {
-        position: relative;
-        border-radius: 50%;
-        color: #fff;
-        background-color: #15b1b1;
-    }
 }
 .another_month {
     > span, .schedule_label > p {
