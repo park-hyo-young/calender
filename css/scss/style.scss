@@ -73,9 +73,9 @@ tbody {
         &:nth-last-child(1), &:nth-last-child(2) {
             .schedule_info {
                 display: none;
-                top: -215px;
+                top: -201px;
                 &::after {
-                    top: 190px;
+                    top: 194px;
                     left: 20px;
                     border: 1px solid #e0e0e0;
                     border-top: 0;
@@ -131,10 +131,10 @@ span {
         color: #fff;
         background-color: #15b1b1;
     }
-    &.another_month {
-        width: 100%;
-        text-align: left;
-        opacity: .5;
+}
+.another_month {
+    > span, .schedule_label > p {
+        opacity: .7;
     }
 }
 .schedule {
@@ -142,12 +142,15 @@ span {
     .schedule_label {
         display: block;
         position: absolute;
-        height: 30px;
+        padding: 10px 0;
+        height: 50px;
+        top: 20px;
         left: -10px;
         font-size: 13px;
         line-height: 30px;
         letter-spacing: -.35px;
         > p {
+            height: 30px;
             color: #fff;
             padding: 0 5px;
             &.color_01 {
@@ -200,7 +203,7 @@ span {
         &.day_7 {
             width: calc(130px * 7);
         }
-        &:hover, &:focus {
+        &:hover {
             .schedule_info {
                 display: block;
             }
@@ -211,7 +214,7 @@ span {
         position: absolute;
         width: 200px;
         height: 200px;
-        top: 45px;
+        top: 50px;
         left: 10px;
         padding: 20px 10px;
         border-radius: 10px;
@@ -224,9 +227,9 @@ span {
         &::after {
             content: '';
             position: absolute;
-            width: 15px;
-            height: 15px;
-            top: -9px;
+            width: 10px;
+            height: 10px;
+            top: -6px;
             left: 20px;
             border: 1px solid #e0e0e0;
             border-bottom: 0;
