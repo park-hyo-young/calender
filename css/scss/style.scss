@@ -61,7 +61,7 @@ table {
     scrollbar-color: #b4acff #dbd7ff;
     scrollbar-width: thin;
     &::-webkit-scrollbar {
-        width: 9px;
+        width: 5px;
         background-color: #dbd7ff;
     }
     &::-webkit-scrollbar-thumb {
@@ -148,8 +148,11 @@ tbody {
         line-height: 30px;
         letter-spacing: -.35px;
         > p {
+            overflow: hidden;
+            text-overflow: ellipsis;
             height: 30px;
-            color: #fff;
+            color: #000;
+            // color: #fff;
             padding: 0 5px;
             &.color_01 {
                 position: relative;
