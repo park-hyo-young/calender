@@ -14,7 +14,7 @@
 .calender_area {
     width: 1000px;
     height: 700px;
-    padding: 25px 42px;
+    padding: 25px 40px;
     background-color: #fbfaff;
     border-radius: 15px;
     text-align: center;
@@ -43,6 +43,7 @@ table {
         th {
             height: 40px;
             padding: 11px 0;
+            color: #666;
             &:nth-child(1) {
                 color: #ff9393;
             }
@@ -59,7 +60,6 @@ tbody {
     height: 470px;
     border-bottom: 1px solid #e0e0e0;
     scrollbar-color: #b4acff #dbd7ff;
-    scrollbar-width: thin;
     tr {
         display: table;
         height: 120px;
@@ -94,7 +94,6 @@ tbody {
             line-height: 25px;
             text-align: center;
             &.today {
-                position: relative;
                 border-radius: 50%;
                 color: #fff;
                 background-color: #15b1b1;
@@ -164,7 +163,7 @@ tbody {
                     top: 10px;
                     border: 1px solid #e0e0e0;
                     border-radius: 50%;
-                    background: linear-gradient(#c8ff00, #ffffff);
+                    background: linear-gradient(#c8ff00, #fff);
                 }
             }
             &.color_02 {
@@ -240,11 +239,11 @@ tbody {
             font-weight: bold;
         }
         .date {
-            padding-top: 5px;
+            padding-top: 8px;
             font-size: 12px;
         }
         .note {
-            margin-top: 10px;
+            margin-top: 5px;
             font-size: 12px;
             font-weight: 500;
             color: #666;
@@ -257,7 +256,6 @@ tbody {
             font-size: 12px;
             resize: none;
             scrollbar-color: #b6b6b6 #f1f1f1;
-            scrollbar-width: thin;
             &::placeholder {
                 color: #999;
             }
