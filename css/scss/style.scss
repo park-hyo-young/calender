@@ -14,7 +14,7 @@
 .calender_area {
     width: 1000px;
     height: 700px;
-    padding: 25px 40px;
+    padding: 25px 12px;
     background-color: #fbfaff;
     border-radius: 15px;
     text-align: center;
@@ -29,20 +29,16 @@
     padding: 40px 0;
 }
 table {
-    width: 100%;
     caption {
         display: none;
     }
     th, td {
-        width: 130px;
         border: 1px solid #e0e0e0;
         background-color: #fff;
     }
     thead {
-        display: table;
         th {
-            height: 40px;
-            padding: 11px 0;
+            padding: 15px 0;
             color: #666;
             &:nth-child(1) {
                 color: #ff9393;
@@ -53,15 +49,29 @@ table {
         }
     }
 }
-tbody {
+.calender_week, .calender_days {
+    width: 100%;
+    margin: 0 auto;
+}
+.calender_days {
     display: block;
     overflow-y: auto;
-    width: 100%;
     height: 470px;
     border-bottom: 1px solid #e0e0e0;
     scrollbar-color: #b4acff #dbd7ff;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        width: 9px;
+        background-color: #dbd7ff;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 30%;
+        background: #b4acff;
+        border-radius: 20px;
+    }
+}
+tbody {
     tr {
-        display: table;
         height: 120px;
         &:last-child {
             td {
@@ -115,15 +125,6 @@ tbody {
                 }
             }
         }
-    }
-    &::-webkit-scrollbar {
-        width: 5px;
-        background-color: #dbd7ff;
-    }
-    &::-webkit-scrollbar-thumb {
-        height: 30%;
-        background: #b4acff;
-        border-radius: 10px;
     }
 }
 .holiday {
@@ -180,25 +181,25 @@ tbody {
             }
         }
         &.day_1 {
-            width: calc(130px * 1);
+            width: calc(138px * 1);
         }
         &.day_2 {
-            width: calc(130px * 2);
+            width: calc(138px * 2);
         }
         &.day_3 {
-            width: calc(130px * 3);
+            width: calc(138px * 3);
         }
         &.day_4 {
-            width: calc(130px * 4);
+            width: calc(138px * 4);
         }
         &.day_5 {
-            width: calc(130px * 5);
+            width: calc(138px * 5);
         }
         &.day_6 {
-            width: calc(130px * 6);
+            width: calc(138px * 6);
         }
         &.day_7 {
-            width: calc(130px * 7);
+            width: calc(138px * 7);
         }
         &:hover {
             .schedule_info {
