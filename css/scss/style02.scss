@@ -47,7 +47,6 @@ table {
     }
     th, td {
         border: 1px solid #e0e0e0;
-        background-color: #fff;
     }
     thead {
         th {
@@ -65,6 +64,7 @@ table {
 .calender_week, .calender_days {
     width: 100%;
     margin: 0 auto;
+    background-color: #fff;
 }
 .calender_days {
     display: block;
@@ -96,7 +96,7 @@ tbody {
                 display: none;
                 top: -201px;
                 &::after {
-                    top: 193px;
+                    top: 192px;
                     left: 20px;
                     border: 1px solid #e0e0e0;
                     border-top: 0;
@@ -164,7 +164,7 @@ tbody {
             @include ellipsis;
             height: 30px;
             color: #fff;
-            padding: 0 5px;
+            padding: 0 10px;
             &.color_01 {
                 position: relative;
                 padding: 0 0 0 20px;
@@ -181,7 +181,7 @@ tbody {
                     background: linear-gradient(#c8ff00, #fff);
                 }
             }
-            &.color_02 {background: linear-gradient(90deg, #ffa600, #ffdfa4);box-shadow: 0 5px 8px rgba($color: #ffa600, $alpha: .3);}
+            &.color_02 {background: linear-gradient(90deg, #ffa600, #ffd588);box-shadow: 0 5px 8px rgba($color: #ffa600, $alpha: .3);}
             &.color_03 {background: linear-gradient(90deg, #0051ff, #a9c4ff);box-shadow: 0 5px 8px rgba($color: #0051ff, $alpha: .3);}
             &.color_04 {background: linear-gradient(90deg, #5900ff, #d376ff);box-shadow: 0 5px 8px rgba($color: #5900ff, $alpha: .3);}
         }
