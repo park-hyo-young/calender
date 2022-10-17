@@ -2,6 +2,19 @@
 @import '_fonts';
 @import '_reset';
 
+@mixin ellipsis($line: 1) {
+    @if ($line == 1) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    } @else {
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: $line;
+    }
+}
 .wrap {
     display: flex;
     align-items: center;
@@ -29,14 +42,17 @@
     padding: 40px 0;
 }
 table {
+    width: 100%;
     caption {
         display: none;
     }
     th, td {
+        width: 138px;
         border: 1px solid #e0e0e0;
         background-color: #fff;
     }
     thead {
+        display: table;
         th {
             padding: 15px 0;
             color: #666;
@@ -53,7 +69,7 @@ table {
     width: 100%;
     margin: 0 auto;
 }
-.calender_days {
+tbody {
     display: block;
     overflow-y: auto;
     height: 470px;
@@ -69,9 +85,8 @@ table {
         background: #b4acff;
         border-radius: 20px;
     }
-}
-tbody {
     tr {
+        display: table;
         height: 120px;
         &:last-child {
             td {
@@ -148,11 +163,9 @@ tbody {
         line-height: 30px;
         letter-spacing: -.35px;
         > p {
-            overflow: hidden;
-            text-overflow: ellipsis;
+            @include ellipsis;
             height: 30px;
-            color: #000;
-            // color: #fff;
+            color: #fff;
             padding: 0 5px;
             &.color_01 {
                 position: relative;
