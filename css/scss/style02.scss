@@ -25,9 +25,9 @@
     background: linear-gradient(45deg, #ffe2e2, #dbd7ff);
 }
 .calender_area {
-    width: 1000px;
+    width: 1100px;
     height: 700px;
-    padding: 25px 12px;
+    padding: 25px 59px;
     background-color: #fbfaff;
     border-radius: 15px;
     text-align: center;
@@ -40,7 +40,7 @@
 .month {
     font-size: 18px;
     padding: 40px 0;
-}
+} 
 table {
     caption {
         display: none;
@@ -181,40 +181,17 @@ tbody {
                     background: linear-gradient(#c8ff00, #fff);
                 }
             }
-            &.color_02 {
-                background: linear-gradient(90deg, #ffa600, #ffdfa4);
-                box-shadow: 0 5px 8px rgba($color: #ffa600, $alpha: .3);
-            }
-            &.color_03 {
-                background: linear-gradient(90deg, #0051ff, #a9c4ff);
-                box-shadow: 0 5px 8px rgba($color: #0051ff, $alpha: .3);
-            }
-            &.color_04 {
-                background: linear-gradient(90deg, #5900ff, #d376ff);
-                box-shadow: 0 5px 8px rgba($color: #5900ff, $alpha: .3);
-            }
+            &.color_02 {background: linear-gradient(90deg, #ffa600, #ffdfa4);box-shadow: 0 5px 8px rgba($color: #ffa600, $alpha: .3);}
+            &.color_03 {background: linear-gradient(90deg, #0051ff, #a9c4ff);box-shadow: 0 5px 8px rgba($color: #0051ff, $alpha: .3);}
+            &.color_04 {background: linear-gradient(90deg, #5900ff, #d376ff);box-shadow: 0 5px 8px rgba($color: #5900ff, $alpha: .3);}
         }
-        &.day_1 {
-            width: calc(138px * 1);
-        }
-        &.day_2 {
-            width: calc(138px * 2);
-        }
-        &.day_3 {
-            width: calc(138px * 3);
-        }
-        &.day_4 {
-            width: calc(138px * 4);
-        }
-        &.day_5 {
-            width: calc(138px * 5);
-        }
-        &.day_6 {
-            width: calc(138px * 6);
-        }
-        &.day_7 {
-            width: calc(138px * 7);
-        }
+        &.day_1 {width: calc(138px * 1);}
+        &.day_2 {width: calc(138px * 2);}
+        &.day_3 {width: calc(138px * 3);}
+        &.day_4 {width: calc(138px * 4);}
+        &.day_5 {width: calc(138px * 5);}
+        &.day_6 {width: calc(138px * 6);}
+        &.day_7 {width: calc(138px * 7);}
         &:hover {
             .schedule_info {
                 display: block;
